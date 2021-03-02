@@ -1,0 +1,10 @@
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\bin\Debug\WindowsFormsDz_3_2.exe.config
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\bin\Debug\WindowsFormsDz_3_2.exe
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\bin\Debug\WindowsFormsDz_3_2.pdb
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\obj\Debug\SimpleExplorer.csprojAssemblyReference.cache
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\obj\Debug\SimpleExplorer.Form1.resources
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\obj\Debug\WindowsFormsDz_3_2.Properties.Resources.resources
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\obj\Debug\SimpleExplorer.csproj.GenerateResource.cache
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\obj\Debug\SimpleExplorer.csproj.CoreCompileInputs.cache
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\obj\Debug\WindowsFormsDz_3_2.exe
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleExplorer\obj\Debug\WindowsFormsDz_3_2.pdb

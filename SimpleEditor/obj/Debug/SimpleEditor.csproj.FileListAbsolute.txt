@@ -1,0 +1,10 @@
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\bin\Debug\WindowsFormsDz_4.exe.config
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\bin\Debug\WindowsFormsDz_4.exe
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\bin\Debug\WindowsFormsDz_4.pdb
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\obj\Debug\SimpleEditor.csprojAssemblyReference.cache
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\obj\Debug\SimpleEditor.Form1.resources
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\obj\Debug\WindowsFormsDz_4.Properties.Resources.resources
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\obj\Debug\SimpleEditor.csproj.GenerateResource.cache
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\obj\Debug\SimpleEditor.csproj.CoreCompileInputs.cache
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\obj\Debug\WindowsFormsDz_4.exe
+C:\Users\Ray\Desktop\WindowsFormsDz_4-master\WindowsFormsDz_4\SimpleEditor\obj\Debug\WindowsFormsDz_4.pdb

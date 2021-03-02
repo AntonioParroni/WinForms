@@ -1,0 +1,11 @@
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\bin\Debug\NewForm.exe.config
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\bin\Debug\NewForm.exe
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\bin\Debug\NewForm.pdb
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\obj\Debug\NewForm.csprojAssemblyReference.cache
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\obj\Debug\NewForm.Properties.Resources.resources
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\obj\Debug\NewForm.csproj.GenerateResource.cache
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\obj\Debug\NewForm.csproj.CoreCompileInputs.cache
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\obj\Debug\NewForm.exe
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\obj\Debug\NewForm.pdb
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\obj\Debug\NewForm.Form2.resources
+C:\Users\Ray\Documents\WinForms\NewForm\NewForm\obj\Debug\NewForm.Form1.resources
