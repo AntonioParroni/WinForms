@@ -1,0 +1,9 @@
+C:\Users\Ray\Desktop\WindowsFormsDz_2\WinFormsGasStation\bin\Debug\WinFormsGasStation.exe.config
+C:\Users\Ray\Desktop\WindowsFormsDz_2\WinFormsGasStation\bin\Debug\WinFormsGasStation.exe
+C:\Users\Ray\Desktop\WindowsFormsDz_2\WinFormsGasStation\bin\Debug\WinFormsGasStation.pdb
+C:\Users\Ray\Desktop\WindowsFormsDz_2\WinFormsGasStation\obj\Debug\WinFormsGasStation.csprojAssemblyReference.cache
+C:\Users\Ray\Desktop\WindowsFormsDz_2\WinFormsGasStation\obj\Debug\WindowsFormsDz_2_3.Form1.resources
+C:\Users\Ray\Desktop\WindowsFormsDz_2\WinFormsGasStation\obj\Debug\WinFormsGasStation.csproj.GenerateResource.cache
+C:\Users\Ray\Desktop\WindowsFormsDz_2\WinFormsGasStation\obj\Debug\WinFormsGasStation.csproj.CoreCompileInputs.cache
+C:\Users\Ray\Desktop\WindowsFormsDz_2\WinFormsGasStation\obj\Debug\WinFormsGasStation.exe
+C:\Users\Ray\Desktop\WindowsFormsDz_2\WinFormsGasStation\obj\Debug\WinFormsGasStation.pdb
