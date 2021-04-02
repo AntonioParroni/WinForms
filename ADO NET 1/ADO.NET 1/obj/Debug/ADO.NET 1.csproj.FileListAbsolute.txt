@@ -1,0 +1,10 @@
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\bin\Debug\ADO.NET_1.exe.config
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\bin\Debug\ADO.NET_1.exe
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\bin\Debug\ADO.NET_1.pdb
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\obj\Debug\ADO.NET 1.csprojAssemblyReference.cache
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\obj\Debug\ADO.NET_1.Properties.Resources.resources
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\obj\Debug\ADO.NET 1.csproj.GenerateResource.cache
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\obj\Debug\ADO.NET 1.csproj.CoreCompileInputs.cache
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\obj\Debug\ADO.NET_1.exe
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\obj\Debug\ADO.NET_1.pdb
+C:\Users\Ray\Documents\WinForms\ADO.NET 1\ADO.NET 1\obj\Debug\ADO.NET_1.Form1.resources
