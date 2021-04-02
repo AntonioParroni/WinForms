@@ -1,0 +1,76 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace HomeWork
+{
+    public partial class Form6 : Form
+    {
+         public Form6()
+        {
+            InitializeComponent();
+            btnRes.Click += ResClick;
+            btnOk.Click += OkClick;
+            textInput.Enter += TextInputEnter;
+        }
+
+        private void TextInputEnter(object sender, EventArgs e)
+        {
+            label.Visible = false;
+            textInput.BackColor = Color.Wheat;
+        }
+
+        private void OkClick(object sender, EventArgs e)
+        {
+            try
+            {
+                DateTime dayT = new DateTime();
+                dayT = DateTime.Parse(textInput.Text);
+                DateTime dayNow = DateTime.Now;
+                TimeSpan tempDay = dayT - dayNow;
+                if (dayT > dayNow)
+                {
+                    if (YearRadio.Checked)
+                    {
+                        textOutput.Text = (tempDay.TotalDays / 365).ToString();
+                    }
+                    if (MonthRadio.Checked)
+                    {
+                        textOutput.Text = (tempDay.TotalDays / 30).ToString();
+                    }
+                    if (DayRadio.Checked)
+                    {
+                        textOutput.Text = ((int)tempDay.TotalDays).ToString();
+                    }
+                    if (minutesRadio.Checked)
+                    {
+                        textOutput.Text = ((int)tempDay.TotalMinutes).ToString();
+                    }
+                    if (secondsRadio.Checked)
+                    {
+                        textOutput.Text = ((int)tempDay.TotalSeconds).ToString();
+                    }
+                }
+                else
+                {
+                    textOutput.Text = "Эта дата уже прошла!";
+                }
+            }
+            catch (Exception)
+            {
+                label.Visible = true;
+                textInput.BackColor = Color.LightCoral;
+            }
+           
+        }
+
+        private void ResClick(object sender, EventArgs e)
+        {
+            textInput.Clear();
+            textOutput.Clear();
+            label.Visible = false;
+            textInput.BackColor = Color.White;
+            YearRadio.Checked = true;
+        }
+    }
+}

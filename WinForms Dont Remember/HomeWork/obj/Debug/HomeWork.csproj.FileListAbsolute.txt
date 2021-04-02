@@ -1,0 +1,15 @@
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\bin\Debug\HomeWork.exe.config
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\bin\Debug\HomeWork.exe
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\bin\Debug\HomeWork.pdb
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.csprojAssemblyReference.cache
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.Properties.Resources.resources
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.GenerateResource.cache
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.CoreCompileInputs.cache
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.exe
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.pdb
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.Form1.resources
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.Form2.resources
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.Form3.resources
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.Form4.resources
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.Form5.resources
+C:\Users\Ray\RiderProjects\HomeWork\HomeWork\obj\Debug\HomeWork.Form6.resources
