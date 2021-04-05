@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b87f6b582f87469fac90346991f96b28" Name="Diagram1">
+        <EntityTypeShape EntityType="AcademyModel.Curators" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcademyModel.Departments" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcademyModel.Faculties" Width="1.5" PointX="1.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcademyModel.Groups" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcademyModel.GroupsCurators" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcademyModel.GroupsLectures" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcademyModel.Lectures" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcademyModel.Subjects" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AcademyModel.Teachers" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="AcademyModel.FK__GroupsCur__Curat__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="AcademyModel.FK__Departmen__Facul__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="AcademyModel.FK__Groups__Departme__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="AcademyModel.FK__GroupsCur__Group__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="AcademyModel.FK__GroupsLec__Group__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="AcademyModel.FK__GroupsLec__Lectu__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="AcademyModel.FK__Lectures__Subjec__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="AcademyModel.FK__Lectures__Teache__4CA06362" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

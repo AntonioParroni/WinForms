@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AcademyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Curators">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="GroupsCurators" Relationship="Self.FK__GroupsCur__Curat__47DBAE45" FromRole="Curators" ToRole="GroupsCurators" />
+  </EntityType>
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Financing" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FacultyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Faculties" Relationship="Self.FK__Departmen__Facul__45F365D3" FromRole="Departments" ToRole="Faculties" />
+    <NavigationProperty Name="Groups" Relationship="Self.FK__Groups__Departme__46E78A0C" FromRole="Departments" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="Faculties">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Financing" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Departments" Relationship="Self.FK__Departmen__Facul__45F365D3" FromRole="Faculties" ToRole="Departments" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Departments" Relationship="Self.FK__Groups__Departme__46E78A0C" FromRole="Groups" ToRole="Departments" />
+    <NavigationProperty Name="GroupsCurators" Relationship="Self.FK__GroupsCur__Group__48CFD27E" FromRole="Groups" ToRole="GroupsCurators" />
+    <NavigationProperty Name="GroupsLectures" Relationship="Self.FK__GroupsLec__Group__49C3F6B7" FromRole="Groups" ToRole="GroupsLectures" />
+  </EntityType>
+  <EntityType Name="GroupsCurators">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CuratorId" Type="Int32" Nullable="false" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Curators" Relationship="Self.FK__GroupsCur__Curat__47DBAE45" FromRole="GroupsCurators" ToRole="Curators" />
+    <NavigationProperty Name="Groups" Relationship="Self.FK__GroupsCur__Group__48CFD27E" FromRole="GroupsCurators" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="GroupsLectures">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="LectureId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Groups" Relationship="Self.FK__GroupsLec__Group__49C3F6B7" FromRole="GroupsLectures" ToRole="Groups" />
+    <NavigationProperty Name="Lectures" Relationship="Self.FK__GroupsLec__Lectu__4AB81AF0" FromRole="GroupsLectures" ToRole="Lectures" />
+  </EntityType>
+  <EntityType Name="Lectures">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LectureRoom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SubjectId" Type="Int32" Nullable="false" />
+    <Property Name="TeacherId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GroupsLectures" Relationship="Self.FK__GroupsLec__Lectu__4AB81AF0" FromRole="Lectures" ToRole="GroupsLectures" />
+    <NavigationProperty Name="Subjects" Relationship="Self.FK__Lectures__Subjec__4BAC3F29" FromRole="Lectures" ToRole="Subjects" />
+    <NavigationProperty Name="Teachers" Relationship="Self.FK__Lectures__Teache__4CA06362" FromRole="Lectures" ToRole="Teachers" />
+  </EntityType>
+  <EntityType Name="Subjects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Lectures" Relationship="Self.FK__Lectures__Subjec__4BAC3F29" FromRole="Subjects" ToRole="Lectures" />
+  </EntityType>
+  <EntityType Name="Teachers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Salary" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Lectures" Relationship="Self.FK__Lectures__Teache__4CA06362" FromRole="Teachers" ToRole="Lectures" />
+  </EntityType>
+  <Association Name="FK__GroupsCur__Curat__47DBAE45">
+    <End Role="Curators" Type="Self.Curators" Multiplicity="1" />
+    <End Role="GroupsCurators" Type="Self.GroupsCurators" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Curators">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupsCurators">
+        <PropertyRef Name="CuratorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Departmen__Facul__45F365D3">
+    <End Role="Faculties" Type="Self.Faculties" Multiplicity="1" />
+    <End Role="Departments" Type="Self.Departments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculties">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Departments">
+        <PropertyRef Name="FacultyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Groups__Departme__46E78A0C">
+    <End Role="Departments" Type="Self.Departments" Multiplicity="1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GroupsCur__Group__48CFD27E">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="GroupsCurators" Type="Self.GroupsCurators" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupsCurators">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GroupsLec__Group__49C3F6B7">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="GroupsLectures" Type="Self.GroupsLectures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupsLectures">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GroupsLec__Lectu__4AB81AF0">
+    <End Role="Lectures" Type="Self.Lectures" Multiplicity="1" />
+    <End Role="GroupsLectures" Type="Self.GroupsLectures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lectures">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupsLectures">
+        <PropertyRef Name="LectureId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Lectures__Subjec__4BAC3F29">
+    <End Role="Subjects" Type="Self.Subjects" Multiplicity="1" />
+    <End Role="Lectures" Type="Self.Lectures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Lectures">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Lectures__Teache__4CA06362">
+    <End Role="Teachers" Type="Self.Teachers" Multiplicity="1" />
+    <End Role="Lectures" Type="Self.Lectures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teachers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Lectures">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AcademyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Curators" EntityType="Self.Curators" />
+    <EntitySet Name="Departments" EntityType="Self.Departments" />
+    <EntitySet Name="Faculties" EntityType="Self.Faculties" />
+    <EntitySet Name="Groups" EntityType="Self.Groups" />
+    <EntitySet Name="GroupsCurators" EntityType="Self.GroupsCurators" />
+    <EntitySet Name="GroupsLectures" EntityType="Self.GroupsLectures" />
+    <EntitySet Name="Lectures" EntityType="Self.Lectures" />
+    <EntitySet Name="Subjects" EntityType="Self.Subjects" />
+    <EntitySet Name="Teachers" EntityType="Self.Teachers" />
+    <AssociationSet Name="FK__GroupsCur__Curat__47DBAE45" Association="Self.FK__GroupsCur__Curat__47DBAE45">
+      <End Role="Curators" EntitySet="Curators" />
+      <End Role="GroupsCurators" EntitySet="GroupsCurators" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Departmen__Facul__45F365D3" Association="Self.FK__Departmen__Facul__45F365D3">
+      <End Role="Faculties" EntitySet="Faculties" />
+      <End Role="Departments" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Groups__Departme__46E78A0C" Association="Self.FK__Groups__Departme__46E78A0C">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GroupsCur__Group__48CFD27E" Association="Self.FK__GroupsCur__Group__48CFD27E">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="GroupsCurators" EntitySet="GroupsCurators" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GroupsLec__Group__49C3F6B7" Association="Self.FK__GroupsLec__Group__49C3F6B7">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="GroupsLectures" EntitySet="GroupsLectures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GroupsLec__Lectu__4AB81AF0" Association="Self.FK__GroupsLec__Lectu__4AB81AF0">
+      <End Role="Lectures" EntitySet="Lectures" />
+      <End Role="GroupsLectures" EntitySet="GroupsLectures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Lectures__Subjec__4BAC3F29" Association="Self.FK__Lectures__Subjec__4BAC3F29">
+      <End Role="Subjects" EntitySet="Subjects" />
+      <End Role="Lectures" EntitySet="Lectures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Lectures__Teache__4CA06362" Association="Self.FK__Lectures__Teache__4CA06362">
+      <End Role="Teachers" EntitySet="Teachers" />
+      <End Role="Lectures" EntitySet="Lectures" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
